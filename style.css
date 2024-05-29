@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;800&family=Merriweather:wght@300&display=swap');
+
+
+
+* {
+   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 50px;
+    color: #222;
+}
+
+h2 {
+    font-size: 45px;
+    color: #222;
+}
+
+h3 {
+    font-size: 29px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+body {
+    width: 100%;
+    
+}
+
+section.p1{
+    padding: 20px 30px;
+}
+
+/* header start  */
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: rgb(232, 233, 233);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    z-index: 900;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-height: 70px;
+}
+.extra{
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    position: sticky;
+}
+.added{
+    background-color: #222;
+}
+
+#header a img {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+
+}
+
+
+  
+
+/* navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.1rem;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+    transition: 0.25s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(104, 194, 204);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(104, 194, 204);
+    position: absolute;
+    bottom: -3px;
+    left: 20px;
+
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+
+
+/* Home  */
+
+#hero {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-around;
+}
+.second img{
+        width: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        -webkit-animation: mover 8s infinite alternate;
+        animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);}
+}@keyframes mover{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30px);}
+}
+
+#hero h1{
+    padding-bottom: 10px;
+}
+#hero h3{
+    padding-bottom: 5px;
+    /* background- */
+    color: rgb(83, 211, 211);
+}
+#hero p{
+    padding-bottom: 5px;
+    color: black;
+}
+#hero .btn{
+    /* background-image: url("img/button.png"); */
+    /* background-color: transparent; */
+    font-weight: 800;
+    color: rgb(93, 133, 254);
+    border: 0; 
+    padding: 12px 12px 12px 12px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+#hero .btn:hover{
+    color: rgb(5, 5, 237);
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    margin:30px 10px;
+    margin: 10px;
+}
+
+#feature .box{
+    width: 150px;
+    padding: 15px 15px;
+    text-align: center;
+    box-shadow: 12px 12px 25px rgb(201, 201, 236);
+    border: 1px solid rgb(220, 210, 210);
+    border-radius: 10px;
+    cursor: pointer;
+} 
+#feature .box img{
+    width: 90%;
+    margin-bottom:10px ;
+}
+#feature .box:hover{
+    border-radius: 15px;
+    box-shadow: 12px 12px 35px rgb(201, 201, 240);
+}
+#feature .box h4{
+    font-size: 17px;
+    padding: 2px 4px 3px 4px;
+    background-color: bisque;
+    line-height: 1;
+    border-radius: 5px;
+}
+#feature .box:nth-child(2) h4{
+    background-color: rgb(187, 228, 228);
+}
+#feature .box:nth-child(3) h4{
+    background-color: rgb(175, 208, 236);
+}
+#feature .box:nth-child(4) h4{
+    background-color: rgb(236, 207, 236);
+}
+#feature .box:nth-child(5) h4{
+    background-color: rgb(245, 221, 221);
+}
+
+
+/* store  */
+
+#store{
+    /* margin: 100px 0px; */
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#store h1{
+    font-size: 50px;
+    font-weight: 400;
+    /* margin-bottom: 5px; */
+    /* margin-top: 500px; */
+}
+#store p{
+    font-size: 1.4rem;
+    width: 100%;
+    font-weight: 400;
+    /* margin-bottom: 10px; */
+    color: rgb(0, 0, 0);
+    text-align: center
+
+}
+#store p span{
+    font-size: 1.5rem;
+    color:rgb(237, 85, 85);
+}
+#store .container{
+    
+    display: flex;
+    /* align-items: ; */
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+#store .inner-container{
+    
+    width: 20%;
+    height: 15%;
+     display: flex; 
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid rgb(203, 233, 205);
+    border-radius: 10px;
+    margin: 15px 20px;
+    
+}
+#store .inner-container h4{
+    font-size: 1.2rem;
+    /* margin-bottom: 10px; */
+    color: rgb(210, 124, 124);
+}
+#store .inner-container div{
+    height: 40%;
+    width: 100%;
+}
+
+#store .inner-container h5{
+    font-size: 15px;
+    /* margin-top: 10px; */
+}
+#store img{
+    margin-top: 5px;        
+    border-radius: 5px;
+    cursor: pointer;
+    /* height: 80%; */
+    width: 60%;
+    height: 50%;
+
+}
+#store img:hover{
+     border-radius: 12px;
+     transform: scale(1.01);
+}
+
+
+#about-us{
+    width: 100%;
+    background-image: url("img/bg3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 0.8;
+ 
+
+}
+
+#about-us .container-2{
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    
+
+    
+
+}
+#about-us .container-2 h2, h3 ,p{
+    margin-top: 12px;
+    color: aliceblue;
+}
+
+#about-us .container-2 #btn{
+    margin-top: 8px; 
+    padding: 5px 5px;
+    width: 100px;
+    font-weight: 600;
+    border: 2px solid rgb(203, 203, 224); 
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#about-us .container-2 #btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* store-2  */
+
+#store-2{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#store-2 .container-3{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+   
+}
+
+#store-2 .container-3 .box-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    height: 30%;  
+    border: 1px solid grey;
+    border-radius: 15px;
+    /* height: 30%; */
+    /* width: 100px; */
+}
+
+#store-2 .container-3 .box-3 img{
+    margin-top: 5px;
+    width: 50%;
+    /* height: 50%; */
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#store-2 .container-3 .box-3 h4 ,h5{
+    /* text-align: center; */
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+/* sign-up */
+
+
+#sign-up{
+    margin-top: 30px;
+    background-image: url(img/b2.jpg);
+    width: 100%;
+    height: 25vh;
+    
+}
+#sign-up .login input{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 1.2rem;
+     position: relative;   
+     right: 20px;
+    float: right;
+   
+    
+}
+#sign-up  h2{
+    margin-top: 10px;
+}
+
+#sign-up .login  h2 ,p{
+  
+   color: rgb(255, 253, 253);
+}
+#sign-up .login .btn{
+   float: right;
+   position: relative;
+   top: 35px;
+   /* right: 0px; */
+   left: 150px;
+   padding: 3px 5px;
+    width: 100px;
+    font-weight: 600;
+    border: 2px solid rgb(203, 203, 224); 
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#sign-up .login .btn:hover{
+    background-color: black;
+    color: white;
+
+}
+
+#footer .End{
+    /* position: relative;
+    top: 530px; */
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* Mens  */
+.side_by_side{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5px , 5px;
+  
+}
+.btn1{
+    background-color: rgb(131, 130, 227);
+    width: 50%;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 3px 3px;
+    font-size: 1rem;
+    padding: 2px 2px;
+}
+.btn1:hover{
+    background-color: rgb(61, 58, 228);
+    color: white;
+
+}
+
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    border: 2px solid black;
+
+}
+
+.new_store div{   
+     display: flex;
+     flex-direction: column;
+}
+.box1{
+    margin-top: 8px;
+   padding: 8px 8px;
+   flex-wrap: wrap;
+   margin: 20px 20px;
+   text-align: center; 
+   box-shadow: 12px 12px 25px rgb(201, 201, 236);
+    border: 1px solid rgb(220, 210, 210);
+    border-radius: 10px;
+    cursor: pointer;
+   
+ 
+   
+}
+.box1 img{
+  
+   display: flex;
+   align-items: center;
+    padding: auto;
+    cursor: pointer;
+    border-radius: 15px;
+    display: inline-block;
+    
+    
+    
+    
+}
+.class1 img{
+    width:  90%;;
+}
+.box1 p{
+    color: rgb(25, 24, 24);
+}
+
+
+
+
+/* #Admin */
+.admin{
+    background-color: rgb(19, 20, 20);
+    color: beige;
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    background-color: #0056b3;
+}
+
+.footer p {
+    margin: 10px 0;
+    color: black;
+}
+
+
+
+.form{
+ display: flex;
+ flex-direction: column; 
+}
+
+.number{
+    max-width: 25px;
+}

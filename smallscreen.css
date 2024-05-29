@@ -1,0 +1,92 @@
+
+#navbar {
+    display: flex; /* Display the nav menu for small screens */
+    flex-direction: column;
+    display: none;
+    overflow: visible;
+  }
+  .hamburger-menu{
+    display: inline;
+    margin-left: 85px;
+}
+#navbar li a {
+  color:white;
+}
+
+
+
+  #navbar.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+    margin-top: -44px;
+   
+  }
+  .colorr{
+    height: 50vh;
+    background-color: black;
+  }
+
+
+   
+
+#hero {
+
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+
+  }
+
+  /* #feature .box{
+    margin: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}  */
+
+#feature{
+  display: flex;
+  /* min-width: 400px;
+  align-items: center;
+  justify-content: space-evenly;  */
+  flex-wrap: wrap;
+  margin:5px 10px;
+  margin: 10px;
+  /* background-color: black; */
+}
+
+
+
+
+
+
+/* mens css  */
+
+ .box1{
+    margin-top: 2px;
+   padding: 15px 15px;
+   border-radius: 12px;
+   flex-wrap: wrap;
+   margin: 12px 28px;
+   width: 60px;
+  
+   
+}
+.class1 img{
+  width:  90%;;
+}
+   
+#feature{
+
+    flex-wrap: wrap;
+    margin:50px 10px;
+    margin: 10px;
+}
+
+
+

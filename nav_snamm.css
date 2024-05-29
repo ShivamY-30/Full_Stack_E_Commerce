@@ -1,0 +1,26 @@
+
+#navbar {
+    display: flex; /* Display the nav menu for small screens */
+    flex-direction: column;
+    display: none;
+    overflow: visible;
+  }
+  .hamburger-menu{
+    display: inline;
+}
+
+
+
+  #navbar.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+   
+  }
+  #navbar.active ul li{
+    
+    margin-bottom: 120px;
+  }
+
